@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -128,3 +129,16 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+=======
+.idea/
+*.iml
+*.iws
+*.eml
+out/
+.DS_Store
+.svn
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
+>>>>>>> 6329183 (Initial MRI physeal injury presentation)
