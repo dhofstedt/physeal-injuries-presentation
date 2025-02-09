@@ -1,418 +1,112 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>MRI Physeal Injuries</title>
+    <title>MRI Physeal Injuries</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/league.css">
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
 
-		<script src="https://cdn.tailwindcss.com"></script>
-		
-		<style>
-			.slide-content { display: flex; align-items: center; }
-			.img-column { flex: 50%; padding: 10px; }
-			.text-column { flex: 50%; padding: 10px; text-align: left; }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="plugin/notes/notes.js"></script>
+    
+    <style>
+        .slide-content { display: flex; align-items: center; }
+        .img-column { flex: 50%; padding: 10px; }
+        .text-column { flex: 50%; padding: 10px; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+			<section>
+				<h2>Stressed or Fractured?</h2>
+				<h4>MRI Differentiating Indicators of Physeal Injury</h4>
+				<p>Daniel Hofstedt, DO</p>
+				<p>February 11, 2025 | MSK Journal Club</p>
+				<img src="images/Title.png" alt="Title Image" style="width: 100%; height: auto;">
+			</section>
+            
+            <section>
+                <h2>Why This Topic Matters</h2>
+                <ul>
+                    <li>Differentiating chronic physeal stress vs. acute Salter-Harris (SH) fractures is crucial for treatment.</li>
+                    <li>Radiologists often interpret MRI without complete clinical history.</li>
+                    <li>Common in active pediatric patients.</li>
+                </ul>
+            </section>
 
-			/* Custom CSS for better styling */
-			#sliderThumb {
-			transition: top 0.1s ease-in-out;
-			}
-			#sliderThumb:hover {
-			background-color: #ddd;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+            <section>
+                <h2>Review of Physeal Anatomy</h2>
+                <ul>
+                    <li>Resting, proliferative, hypertrophic zones.</li>
+                    <li>Zone of Provisional Calcification (ZPC) interface.</li>
+                    <li>Longitudinal growth occurs via endochondral ossification.</li>
+                </ul>
+            </section>
 
-				<!-- Title Slide -->
-				<section>
-					<h2>Testing new title</h2>
-					<h4>Chronic Stress vs Acute Trauma in Pediatrics</h4>
-					<p style="font-size: 0.8em;">Department of Pediatric Radiology</p>
-				</section>
+            <section>
+                <h2>Study Overview</h2>
+                <ul>
+                    <li>Retrospective study, 68 MRIs, 62 children.</li>
+                    <li>Two groups: Chronic physeal stress (48), SH fractures (35).</li>
+                    <li>MRI sequences: T2-weighted FS, proton-density, T1-weighted.</li>
+                </ul>
+            </section>
 
-				<!-- Learning Objectives -->
-				<section>
-					<h3>Learning Objectives</h3>
-					<ol>
-						<li class="fragment">Normal physeal MRI anatomy</li>
-						<li class="fragment">Chronic stress characteristics</li>
-						<li class="fragment">Acute injury patterns</li>
-						<li class="fragment">Key differentiating features</li>
-					</ol>
-				</section>
+            <section>
+                <h2>Key MRI Findings: Chronic Physeal Stress</h2>
+                <ul>
+                    <li>ZPC discontinuity (79% vs. 49%, p = 0.004)</li>
+                    <li>Focal physeal thickening (98% vs. 77%, p = 0.003)</li>
+                    <li>No periosteal or perichondrial injury.</li>
+                </ul>
+            </section>
 
-				<section>
-					<h3>stack viewer</h3>
-					<div class="max-w-3xl mx-auto p-4">
-						<!-- File Upload Input with ARIA label -->
-						<label for="fileInput" class="block mb-2 text-sm font-medium text-gray-300">Upload Images</label>
-						<input
-						  type="file"
-						  id="fileInput"
-						  multiple
-						  accept="image/*"
-						  class="mb-4 block w-full text-gray-900 bg-gray-200 rounded border border-gray-300 focus:outline-none"
-						  aria-label="Upload images"
-						/>
-					
-						<!-- Image Viewer Container -->
-						<div
-						  id="viewer"
-						  class="relative w-full h-[500px] bg-black flex items-center justify-center overflow-hidden"
-						  role="region"
-						  aria-live="polite"
-						>
-						  <!-- Placeholder text shown when no images have been uploaded -->
-						  <span id="placeholder" class="text-gray-400">
-							Please upload images to view
-						  </span>
-						  <!-- Image element (initially hidden) -->
-						  <img
-							id="imageDisplay"
-							src=""
-							alt="Image Viewer"
-							class="absolute inset-0 object-contain w-full h-full hidden"
-							aria-live="polite"
-						  />
-						  <!-- Vertical Slider (hidden until images are uploaded) -->
-						  <div
-							id="sliderContainer"
-							class="absolute right-4 top-0 bottom-0 flex items-center hidden"
-							aria-label="Image slider"
-						  >
-							<!-- Slider track -->
-							<div
-							  id="sliderTrack"
-							  class="w-2 bg-gray-600 rounded-full relative h-full cursor-pointer"
-							  role="slider"
-							  aria-valuemin="0"
-							  aria-valuemax="100"
-							  aria-valuenow="0"
-							  tabindex="0"
-							>
-							  <!-- Slider thumb -->
-							  <div
-								id="sliderThumb"
-								class="w-4 h-4 bg-white rounded-full absolute cursor-pointer"
-								style="left: -1px; top: 0;"
-								role="slider"
-								aria-valuemin="0"
-								aria-valuemax="100"
-								aria-valuenow="0"
-								tabindex="0"
-							  ></div>
-							</div>
-						  </div>
-						</div>
-					  </div>
-					  <script>
-						// Wait for the DOM to be fully loaded
-						document.addEventListener("DOMContentLoaded", function () {
-						  let imageList = [];
-						  let currentIndex = 0;
-						  let dragging = false;
-					
-						  // Get references to DOM elements
-						  const fileInput = document.getElementById("fileInput");
-						  const viewer = document.getElementById("viewer");
-						  const placeholder = document.getElementById("placeholder");
-						  const imageDisplay = document.getElementById("imageDisplay");
-						  const sliderContainer = document.getElementById("sliderContainer");
-						  const sliderTrack = document.getElementById("sliderTrack");
-						  const sliderThumb = document.getElementById("sliderThumb");
-					
-						  // When the user uploads files…
-						  fileInput.addEventListener("change", function (e) {
-							const files = Array.from(e.target.files);
-							if (files.length === 0) return;
-					
-							// Sort files by extracting numbers from their names.
-							files.sort((a, b) => {
-							  const matchA = a.name.match(/\d+/);
-							  const matchB = b.name.match(/\d+/);
-							  if (matchA && matchB) {
-								return parseInt(matchA[0]) - parseInt(matchB[0]);
-							  } else if (matchA) {
-								return -1;
-							  } else if (matchB) {
-								return 1;
-							  } else {
-								return a.name.localeCompare(b.name);
-							  }
-							});
-					
-							// Create an array of image objects with a name and an object URL.
-							imageList = files.map((file) => ({
-							  name: file.name,
-							  url: URL.createObjectURL(file),
-							}));
-					
-							// Start at the first image.
-							currentIndex = 0;
-							updateImage();
-						  });
-					
-						  // Updates the displayed image and the slider thumb position.
-						  function updateImage() {
-							if (imageList.length > 0) {
-							  placeholder.classList.add("hidden");
-							  imageDisplay.src = imageList[currentIndex].url;
-							  imageDisplay.classList.remove("hidden");
-							  sliderContainer.classList.remove("hidden");
-							} else {
-							  placeholder.classList.remove("hidden");
-							  imageDisplay.src = "";
-							  imageDisplay.classList.add("hidden");
-							  sliderContainer.classList.add("hidden");
-							}
-					
-							if (!dragging) {
-							  updateSliderThumb();
-							}
-						  }
-					
-						  // Listen for mouse wheel events on the viewer for navigation.
-						  viewer.addEventListener("wheel", function (e) {
-							if (imageList.length === 0) return;
-							e.preventDefault();
-							if (e.deltaY > 0) {
-							  // Scroll down for next image (but don’t loop past the last image)
-							  if (currentIndex < imageList.length - 1) {
-								currentIndex++;
-								updateImage();
-							  }
-							} else if (e.deltaY < 0) {
-							  // Scroll up for previous image (but don’t loop before the first image)
-							  if (currentIndex > 0) {
-								currentIndex--;
-								updateImage();
-							  }
-							}
-						  });
-					
-						  // Calculate and set the slider thumb's vertical position based on the current image index.
-						  function updateSliderThumb() {
-							if (imageList.length === 0) {
-							  sliderThumb.style.top = "0px";
-							  return;
-							}
-							const trackHeight = sliderTrack.clientHeight;
-							const thumbHeight = sliderThumb.clientHeight;
-							const maxTop = trackHeight - thumbHeight;
-							let newTop = 0;
-							if (imageList.length > 1) {
-							  newTop = (currentIndex / (imageList.length - 1)) * maxTop;
-							}
-							sliderThumb.style.top = newTop + "px";
-							sliderThumb.setAttribute("aria-valuenow", (currentIndex / (imageList.length - 1)) * 100);
-							sliderTrack.setAttribute("aria-valuenow", (currentIndex / (imageList.length - 1)) * 100);
-						  }
-					
-						  // Enable dragging of the slider thumb.
-						  sliderThumb.addEventListener("pointerdown", function (e) {
-							e.preventDefault();
-							dragging = true;
-							sliderThumb.setPointerCapture(e.pointerId);
-						  });
-					
-						  sliderThumb.addEventListener("pointermove", function (e) {
-							if (!dragging) return;
-							e.preventDefault();
-					
-							const trackRect = sliderTrack.getBoundingClientRect();
-							const thumbHeight = sliderThumb.clientHeight;
-							const trackHeight = sliderTrack.clientHeight;
-							const maxTop = trackHeight - thumbHeight;
-					
-							// Calculate the new thumb top position relative to the slider track.
-							let offsetY = e.clientY - trackRect.top;
-							let newTop = offsetY - thumbHeight / 2;
-							newTop = Math.max(0, Math.min(newTop, maxTop));
-							sliderThumb.style.top = newTop + "px";
-					
-							// Calculate the corresponding image index based on the thumb’s position.
-							const ratio = newTop / maxTop;
-							const newIndex = Math.round(ratio * (imageList.length - 1));
-							if (newIndex !== currentIndex) {
-							  currentIndex = newIndex;
-							  // Update the image immediately without changing the slider thumb (already set by pointermove).
-							  imageDisplay.src = imageList[currentIndex].url;
-							}
-						  });
-					
-						  sliderThumb.addEventListener("pointerup", function (e) {
-							dragging = false;
-							sliderThumb.releasePointerCapture(e.pointerId);
-							updateSliderThumb();
-						  });
-					
-						  sliderThumb.addEventListener("pointercancel", function (e) {
-							dragging = false;
-							updateSliderThumb();
-						  });
-					
-						  // Optional: Allow clicking on the slider track to jump the thumb to that position.
-						  sliderTrack.addEventListener("click", function (e) {
-							if (imageList.length === 0) return;
-							const trackRect = sliderTrack.getBoundingClientRect();
-							const thumbHeight = sliderThumb.clientHeight;
-							const trackHeight = sliderTrack.clientHeight;
-							const maxTop = trackHeight - thumbHeight;
-					
-							let offsetY = e.clientY - trackRect.top;
-							let newTop = offsetY - thumbHeight / 2;
-							newTop = Math.max(0, Math.min(newTop, maxTop));
-							sliderThumb.style.top = newTop + "px";
-					
-							const ratio = newTop / maxTop;
-							currentIndex = Math.round(ratio * (imageList.length - 1));
-							updateImage();
-						  });
-					
-						  // Add keyboard navigation
-						  document.addEventListener("keydown", function (e) {
-							if (imageList.length === 0) return;
-							if (e.key === "ArrowUp" && currentIndex > 0) {
-							  currentIndex--;
-							  updateImage();
-							} else if (e.key === "ArrowDown" && currentIndex < imageList.length - 1) {
-							  currentIndex++;
-							  updateImage();
-							}
-						  });
-					
-						  // Clean up object URLs when no longer needed
-						  window.addEventListener("beforeunload", function () {
-							imageList.forEach((image) => URL.revokeObjectURL(image.url));
-						  });
-						});
-					  </script>
-				</section>
+            <section>
+                <h2>Key MRI Findings: Acute SH Fractures</h2>
+                <ul>
+                    <li>Periosteal and perichondrial injury (80–83%, p < 0.001)</li>
+                    <li>Soft tissue edema (97% vs. 0%, p < 0.001)</li>
+                    <li>Joint effusion (60% vs. 4%, p < 0.001)</li>
+                </ul>
+            </section>
 
-				<!-- Normal Anatomy -->
-				<section>
-					<section>
-						<div class="slide-content">
-							<div class="img-column">
-								<img src="images/normal-physis.png" style="max-height: 400px;">
-							</div>
-							<div class="text-column">
-								<h4>Normal Physeal Anatomy</h4>
-								<ul style="font-size: 0.7em;">
-									<li class="fragment">Growth plate layers</li>
-									<li class="fragment">T1: Hypointense line</li>
-									<li class="fragment">T2/STIR: Hyperintense</li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					
-					<!-- MRI Protocol -->
-					<section>
-						<h4>Recommended Protocol</h4>
-						<pre><code data-trim data-line-numbers>
-						Sagittal T1/T2-weighted
-						Coronal STIR
-						3D SPGR (cartilage)
-						Slice thickness ≤3mm
-						</code></pre>
-					</section>
-				</section>
+            <section>
+                <h2>Clinical Implications</h2>
+                <ul>
+                    <li>Chronic stress → activity modification, PT, monitoring.</li>
+                    <li>Acute SH fractures → immobilization, potential surgery.</li>
+                    <li>Periosteal injury, edema, effusion → think SH fracture.</li>
+                </ul>
+            </section>
 
-				<!-- Chronic Stress -->
-				<section>
-					<div class="slide-content">
-						<div class="img-column">
-							<img src="images/chronic-stress.png" class="fragment" style="max-height: 400px;">
-						</div>
-						<div class="text-column">
-							<h4>Chronic Physeal Stress</h4>
-							<ul style="font-size: 0.7em;">
-								<li class="fragment">Repetitive microtrauma</li>
-								<li class="fragment">Physeal widening >2mm</li>
-								<li class="fragment">Cartilage T2 hyperintensity</li>
-								<li class="fragment">Metaphyseal edema</li>
-							</ul>
-						</div>
-					</div>
-				</section>
+            <section>
+                <h2>Conclusion</h2>
+                <ul>
+                    <li>MRI helps differentiate chronic stress from acute fractures.</li>
+                    <li>Look for key indicators: ZPC discontinuity, periosteal injury.</li>
+                    <li>Future research: Long-term MRI follow-up of SH fractures.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
 
-				<!-- Acute Injury -->
-				<section>
-					<div class="slide-content">
-						<div class="img-column">
-							<img src="images/acute-injury.png" class="fragment" style="max-height: 400px;">
-						</div>
-						<div class="text-column">
-							<h4>Acute Physeal Injury</h4>
-							<ul style="font-size: 0.7em;">
-								<li class="fragment">Salter-Harris fractures</li>
-								<li class="fragment">Physeal discontinuity</li>
-								<li class="fragment">Hemorrhagic changes</li>
-								<li class="fragment">Periosteal reaction</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!-- Comparison Table -->
-				<section data-markdown>
-					<textarea data-template>
-						## Key MRI Differences
-						| Feature               | Chronic Stress         | Acute Injury          |
-						|-----------------------|------------------------|-----------------------|
-						| **Physeal Width**     | Diffuse widening       | Focal disruption      |
-						| **Edema Pattern**     | Metaphyseal            | Peri-physeal          |
-						| **Signal Changes**    | Chronic (low T1)       | Acute (high T2/STIR)  |
-						| **Clinical History**  | Repetitive stress      | Acute trauma          |
-					</textarea>
-				</section>
-
-				<!-- Clinical Implications -->
-				<section>
-					<h3>Clinical Management</h3>
-					<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-						<div>
-							<h5 style="color: #1a73e8;">Chronic</h5>
-							<ul style="font-size: 0.6em;">
-								<li>Activity modification</li>
-								<li>Physical therapy</li>
-								<li>Serial imaging</li>
-							</ul>
-						</div>
-						<div>
-							<h5 style="color: #ea4335;">Acute</h5>
-							<ul style="font-size: 0.6em;">
-								<li>Immediate immobilization</li>
-								<li>Surgical consultation</li>
-								<li>Growth monitoring</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			Reveal.initialize({
-				hash: true,
-				transition: 'convex',
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
-				pdfSeparateFragments: false
-			});
-		</script>
-	</body>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'convex',
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+            pdfSeparateFragments: false
+        });
+    </script>
+</body>
 </html>
