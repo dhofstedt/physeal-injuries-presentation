@@ -1,141 +1,548 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>MRI Physeal Injuries</title>
+  <title>MRI Physeal Injuries</title>
 
-    <link rel="stylesheet" href="dist/reset.css">
-    <link rel="stylesheet" href="dist/reveal.css">
-    <link rel="stylesheet" href="dist/theme/black.css">
-    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css">
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="plugin/notes/notes.js"></script>
-    
-    <style>
-        .slide-content { display: flex; align-items: center; }
-        .img-column { flex: 50%; padding: 10px; }
-        .text-column { flex: 50%; padding: 10px; text-align: left; }
-    </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="plugin/notes/notes.js"></script>
+  
+  <style>
+    .slide-content { display: flex; align-items: center; height: 100%; }
+    .img-column { flex: 66; padding: 10px; }
+    .img-column img { width: 100%; height: auto; max-height: 60vh; }
+    .text-column { flex: 33%; padding: 10px; text-align: left; }
+    .center-text { font-size: 2rem; text-align: center; }
+    .reveal h2 {
+      margin-top: -0.75em;
+    }
+  </style>
 </head>
 <body>
-    <div class="reveal">
-        <div class="slides">
-			<section>
-				<h2>Stressed or Fractured?</h2>
-				<h4>MRI Differentiating Indicators of Physeal Injury</h4>
-				<p>Daniel Hofstedt, DO</p>
-				<p>February 11, 2025 | MSK Journal Club</p>
-				<img src="images/Title.png" alt="Title Image" style="width: 100%; height: auto;">
-			</section>
-            
-            <section>
-                <h2>Why This Topic Matters</h2>
-                <ul>
-                    <li>Differentiating chronic physeal stress vs. acute Salter-Harris (SH) fractures is crucial for treatment.</li>
-                    <li>Radiologists often interpret MRI without complete clinical history.</li>
-                    <li>Common in active pediatric patients.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Review of Physeal Anatomy</h2>
-                <ul>
-                    <li>Resting, proliferative, hypertrophic zones.</li>
-                    <li>Zone of Provisional Calcification (ZPC) interface.</li>
-                    <li>Longitudinal growth occurs via endochondral ossification.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Study Overview</h2>
-                <ul>
-                    <li>Retrospective study, 68 MRIs, 62 children.</li>
-                    <li>Two groups: Chronic physeal stress (48), SH fractures (35).</li>
-                    <li>MRI sequences: T2-weighted FS, proton-density, T1-weighted.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Key MRI Findings: Chronic Physeal Stress</h2>
-                <ul>
-                    <li>ZPC discontinuity (79% vs. 49%, p = 0.004)</li>
-                    <li>Focal physeal thickening (98% vs. 77%, p = 0.003)</li>
-                    <li>No periosteal or perichondrial injury.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Key MRI Findings: Acute SH Fractures</h2>
-                <ul>
-                    <li>Periosteal and perichondrial injury (80–83%, p < 0.001)</li>
-                    <li>Soft tissue edema (97% vs. 0%, p < 0.001)</li>
-                    <li>Joint effusion (60% vs. 4%, p < 0.001)</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Clinical Implications</h2>
-                <ul>
-                    <li>Chronic stress → activity modification, PT, monitoring.</li>
-                    <li>Acute SH fractures → immobilization, potential surgery.</li>
-                    <li>Periosteal injury, edema, effusion → think SH fracture.</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Conclusion</h2>
-                <ul>
-                    <li>MRI helps differentiate chronic stress from acute fractures.</li>
-                    <li>Look for key indicators: ZPC discontinuity, periosteal injury.</li>
-                    <li>Future research: Long-term MRI follow-up of SH fractures.</li>
-                </ul>
-            </section>
-
-            <!-- New slide for Fig 1.png -->
-			<section>
-				<h2>Fig 1: Knee Injury Overview</h2>
-				<div class="slide-content">
-					<div class="img-column">
-						<img src="images/Fig 1.png" alt="Figure 1" style="width:100%;height:auto;">
-					</div>
-					<div class="text-column">
-						<p>
-							12-year-old with acute on chronic knee injury.<br>
-							Non-displaced Salter-Harris III fracture, proximal tibial widening, periosteal disruption, and abnormal physeal features.
-						</p>
-					</div>
-				</div>
-			</section>
-
-            <!-- New slide for References -->
-			<section>
-				<h2>References</h2>
-					<p>
-					1. Bedoya MA, Jaramillo D, Iwasaka‑Neder J, Laor T. Stressed or fractured: MRI differentiating indicators of physeal injury. Skeletal Radiol. 2024;53:2437–2447. doi:10.1007/s00256-024-04670-y
-				</p>
-			</section>
-            <!-- New slide for Thank You -->
-			<section>
-				<h2>Thank You</h2>
-				<p>Thank you for your attention!</p>
-			</section>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Slide 1: Title Slide -->
+      <section>
+        <h2>Stressed or Fractured?</h2>
+        <h4>MRI Differentiating Indicators of Physeal Injury</h4>
+        <p>Daniel Hofstedt, DO</p>
+        <p>February 11, 2025 | MSK Journal Club</p>
+      </section>
+      
+      <!-- Slide 2: Introduction -->
+      <section>
+        <h2>Introduction</h2>
+        <p>Sports injuries in children are common. Distinguishing chronic stress from acute fractures is challenging.</p>
+      </section>
+      
+<!-- Slide 3.1: Physis Anatomy -->
+<section>
+    <h2 class="slide-title">Physis & Growth: Anatomy</h2>
+    <div class="slide-content">
+      <div class="text-column">
+        <p>Multilayer cartilage: resting, proliferative, hypertrophic zones.</p>
+      </div>
+      <div class="img-column">
+        <img src="images/Fig 2.png" alt="Normal Physis">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 3.2: Endochondral Ossification -->
+  <section>
+    <h2 class="slide-title">Physis & Growth: Ossification</h2>
+    <div class="slide-content">
+      <div class="text-column">
+        <p>Bone forms as cartilage is replaced during growth.</p>
+      </div>
+      <div class="img-column">
+        <img src="images/Fig 2.png" alt="Normal Physis">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 3.3: Zone of Provisional Calcification -->
+  <section>
+    <h2 class="slide-title">Physis & Growth: ZPC</h2>
+    <div class="slide-content">
+      <div class="text-column">
+        <p>ZPC: a thin, distinct line marking the ossification front.</p>
+      </div>
+      <div class="img-column">
+        <img src="images/Fig 2.png" alt="Normal Physis">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 3.4: Normal Uniformity -->
+  <section>
+    <h2 class="slide-title">Physis & Growth: Uniformity</h2>
+    <div class="slide-content">
+      <div class="text-column">
+        <p>Uniform thickness and clear zones signal normal growth.</p>
+      </div>
+      <div class="img-column">
+        <img src="images/Fig 2.png" alt="Normal Physis">
+      </div>
+    </div>
+  </section>
+  
+    
+<!-- Slide 4.0: Clinical Presentation -->
+<section>
+    <h2 class="slide-title">Acute on Chronic Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 1.png" alt="Acute on Chronic Injury">
+      </div>
+      <div class="text-column">
+        <p>12-year-old female gymnast with months of persistent knee pain, acutely worsened after practice injury.</p>
+      </div>
+    </div>
+  </section>
+  
+<!-- Slide 4.1: Arrow Annotation -->
+<section>
+    <h2 class="slide-title">Acute on Chronic Injury</h2>
+    <div class="slide-content">
+        <div class="img-column">
+            <img src="images/Fig 1.png" alt="Acute on Chronic Injury">
+        </div>
+        <div class="text-column">
+            <p>Arrow: Nondisplaced Salter-Harris III fracture on lateral proximal tibia.</p>
         </div>
     </div>
+</section>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script>
-        Reveal.initialize({
-            hash: true,
-            transition: 'convex',
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
-            pdfSeparateFragments: false
-        });
-    </script>
+<!-- Slide 4.2: Dashed Arrow Annotation -->
+<section>
+    <h2 class="slide-title">Acute on Chronic Injury</h2>
+    <div class="slide-content">
+        <div class="img-column">
+            <img src="images/Fig 1.png" alt="Acute on Chronic Injury">
+        </div>
+        <div class="text-column">
+            <p>Dashed Arrow: Diffuse proximal tibial physeal widening.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 4.3: Curved Arrow Annotation -->
+<section>
+    <h2 class="slide-title">Acute on Chronic Injury</h2>
+    <div class="slide-content">
+        <div class="img-column">
+            <img src="images/Fig 1.png" alt="Acute on Chronic Injury">
+        </div>
+        <div class="text-column">
+            <p>Curved Arrow: Focal periosteal disruption indicating injury.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 4.4: Asterisk Annotation -->
+<section>
+    <h2 class="slide-title">Acute on Chronic Injury</h2>
+    <div class="slide-content">
+        <div class="img-column">
+            <img src="images/Fig 1.png" alt="Acute on Chronic Injury">
+        </div>
+        <div class="text-column">
+            <p>Asterisk: Small knee effusion visible.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 4.5: Dashed Ovals Annotation -->
+<section>
+    <h2 class="slide-title">Acute on Chronic Injury</h2>
+    <div class="slide-content">
+        <div class="img-column">
+            <img src="images/Fig 1.png" alt="Acute on Chronic Injury">
+        </div>
+        <div class="text-column">
+            <p>Dashed Ovals: Focal physeal thickening along the medial proximal tibia.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 4.6: Arrowheads Annotation -->
+<section>
+    <h2 class="slide-title">Acute on Chronic Injury</h2>
+    <div class="slide-content">
+        <div class="img-column">
+            <img src="images/Fig 1.png" alt="Acute on Chronic Injury">
+        </div>
+        <div class="text-column">
+            <p>Arrowheads: Interruption of the ZPC on proximal tibia and distal femur.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Slide 5.0: Chronic Stress Injury – Clinical Background -->
+<section>
+    <h2 class="slide-title">Chronic Stress Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 5.png" alt="Chronic Stress Injury">
+      </div>
+      <div class="text-column">
+        <p>12-year-old female gymnast with distal radial stress injury. Wrist pain from overuse.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 5.1: Arrow – Generalized Physeal Thickening -->
+  <section>
+    <h2 class="slide-title">Chronic Stress Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 5.png" alt="Generalized Physeal Thickening">
+      </div>
+      <div class="text-column">
+        <p>Arrow: Generalized thickening of the distal radial physis.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 5.2: Dashed Arrow – Intact Periosteum -->
+  <section>
+    <h2 class="slide-title">Chronic Stress Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 5.png" alt="Intact Periosteum">
+      </div>
+      <div class="text-column">
+        <p>Dashed Arrow: Periosteum along the metaphysis is intact.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 5.3: Curved Arrow – Intact Perichondrium -->
+  <section>
+    <h2 class="slide-title">Chronic Stress Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 5.png" alt="Intact Perichondrium">
+      </div>
+      <div class="text-column">
+        <p>Curved Arrow: Perichondrium at the physis periphery remains intact.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+    
+<!-- Slide 6.0: Acute Salter-Harris Fracture – Clinical Background -->
+<section>
+    <h2 class="slide-title">Acute SH Fracture</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 6.png" alt="Acute SH Fracture">
+      </div>
+      <div class="text-column">
+        <p>13-year-old female with wrist trauma; acute pain and swelling.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 6.1: Arrow – Thickened Distal Radial Physis -->
+  <section>
+    <h2 class="slide-title">Acute SH Fracture</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 6.png" alt="Thickened Distal Radial Physis">
+      </div>
+      <div class="text-column">
+        <p>Arrow: Distal radial physis is thickened and hyperintense.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 6.2: Dashed Arrow – Normal Distal Ulnar Physis -->
+  <section>
+    <h2 class="slide-title">Acute SH Fracture</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 6.png" alt="Normal Distal Ulnar Physis">
+      </div>
+      <div class="text-column">
+        <p>Dashed Arrow: Distal ulnar physis shows normal signal intensity.</p>
+      </div>
+    </div>
+  </section>
+  
+    
+<!-- Slide 7.0: ZPC – Clinical Background -->
+<section>
+    <h2 class="slide-title">ZPC</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 7.png" alt="ZPC Overview">
+      </div>
+      <div class="text-column">
+        <p>Chronic stress injuries can interrupt the normal ZPC.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 7.1: Dashed Ovals – Focal ZPC Discontinuity -->
+  <section>
+    <h2 class="slide-title">ZPC</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 7.png" alt="ZPC Disruption - Dashed Ovals">
+      </div>
+      <div class="text-column">
+        <p>Dashed Ovals: Focal discontinuity at the radial aspect of the physis.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 7.2: Arrow – Normal ZPC -->
+  <section>
+    <h2 class="slide-title">ZPC</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 7.png" alt="Normal ZPC - Arrow">
+      </div>
+      <div class="text-column">
+        <p>Arrow: Normal linear ZPC is seen on the ulnar aspect.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 7.3: Dashed Arrow – Demarcation of ZPC -->
+  <section>
+    <h2 class="slide-title">ZPC</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 7.png" alt="ZPC Demarcation">
+      </div>
+      <div class="text-column">
+        <p>Dashed Arrow: Demarcates the end of normal ZPC before disruption.</p>
+      </div>
+    </div>
+  </section>
+  
+    
+<!-- Slide 8.0: Periosteal/Perichondrial Injury – Clinical Background -->
+<section>
+    <h2 class="slide-title">Periosteal/Perichondrial Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 8.png" alt="Periosteal/Perichondrial Injury">
+      </div>
+      <div class="text-column">
+        <p>5-year-old male with acute Salter-Harris II fracture; knee pain after trauma.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 8.1: Dashed Arrow – Periosteal Elevation -->
+  <section>
+    <h2 class="slide-title">Periosteal/Perichondrial Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 8.png" alt="Periosteal Elevation">
+      </div>
+      <div class="text-column">
+        <p>Dashed Arrow: Periosteal elevation by a small subperiosteal hematoma.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 8.2: Arrow – Focal Rupture of the Perichondrium -->
+  <section>
+    <h2 class="slide-title">Periosteal/Perichondrial Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 8.png" alt="Perichondrial Rupture">
+      </div>
+      <div class="text-column">
+        <p>Arrow: Focal rupture of the posterior perichondrium.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 8.3: Curved Arrow – Interposed Periosteal Tissue -->
+  <section>
+    <h2 class="slide-title">Periosteal/Perichondrial Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 8.png" alt="Interposed Periosteal Tissue">
+      </div>
+      <div class="text-column">
+        <p>Curved Arrow: Periosteal tissue interposed into the fractured proximal tibial physis.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 8.4: Arrowheads – Unaffected Distal Femur -->
+  <section>
+    <h2 class="slide-title">Periosteal/Perichondrial Injury</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 8.png" alt="Intact Structures">
+      </div>
+      <div class="text-column">
+        <p>Arrowheads: Unaffected distal femur shows intact periosteum (small) and perichondrium (large).</p>
+      </div>
+    </div>
+  </section>
+  
+    
+ <!-- Slide 9.0: Comparative Imaging – Clinical Background -->
+<section>
+    <h2 class="slide-title">Comparative Imaging</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 9.png" alt="Comparative Imaging">
+      </div>
+      <div class="text-column">
+        <p>Side-by-side view: Chronic vs. acute distal femur injuries.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 9.1: Arrow – Chronic Injury Edema -->
+  <section>
+    <h2 class="slide-title">Comparative Imaging</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 9.png" alt="Chronic Injury Edema">
+      </div>
+      <div class="text-column">
+        <p>Arrow: Focal posterior periphyseal metaphyseal edema in chronic injury (14-year-old girl).</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 9.2: Arrowhead – Acute Fracture Extension -->
+  <section>
+    <h2 class="slide-title">Comparative Imaging</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 9.png" alt="Acute Fracture Extension">
+      </div>
+      <div class="text-column">
+        <p>Arrowhead: Metaphyseal fracture component in acute injury (13-year-old boy).</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 9.3: Dashed Arrow – Bone Marrow Edema & Contusion -->
+  <section>
+    <h2 class="slide-title">Comparative Imaging</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 9.png" alt="Bone Marrow Edema">
+      </div>
+      <div class="text-column">
+        <p>Dashed Arrow: Distal femoral bone marrow edema and focal contusion in the medial condyle.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 9.4: Curved Arrow – Periosteal Elevation -->
+  <section>
+    <h2 class="slide-title">Comparative Imaging</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 9.png" alt="Periosteal Elevation">
+      </div>
+      <div class="text-column">
+        <p>Curved Arrow: Mild periosteal elevation seen in the acute fracture.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 9.5: Asterisk – Knee Effusion -->
+  <section>
+    <h2 class="slide-title">Comparative Imaging</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 9.png" alt="Knee Effusion">
+      </div>
+      <div class="text-column">
+        <p>Asterisk: Small knee effusion present in the acute injury case.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 9.6: Curved Dashed Arrow – Perichondrial Disruption -->
+  <section>
+    <h2 class="slide-title">Comparative Imaging</h2>
+    <div class="slide-content">
+      <div class="img-column">
+        <img src="images/Fig 9.png" alt="Perichondrial Disruption">
+      </div>
+      <div class="text-column">
+        <p>Curved Dashed Arrow: Focal perichondrial disruption in the acute fracture.</p>
+      </div>
+    </div>
+  </section>
+  
+    
+    <!-- Slide 10: Data Summary -->
+    <section>
+      <h2 class="slide-title">Study Data</h2>
+      <div class="slide-content">
+        <div class="img-column">
+        <img src="images/Table 1.png" alt="Injury Distribution">
+        </div>
+        <div class="text-column">
+        <p>Analysis of 83 injuries revealed 79% ZPC discontinuity in chronic stress cases and 83% periosteal injury in acute fractures.</p>
+        </div>
+      </div>
+    </section>
+      
+      <!-- Slide 11: Clinical Impact -->
+      <section>
+        <h2>Clinical Impact</h2>
+        <p>MRI findings guide management: chronic stress injuries benefit from rest and physical therapy, while acute fractures require immobilization.</p>
+      </section>
+      
+      <!-- Slide 12: Conclusion -->
+      <section>
+        <h2>Conclusion</h2>
+        <p>MRI offers key indicators to differentiate chronic physeal stress from acute Salter-Harris fractures. Integrate imaging with clinical history for optimal care.</p>
+      </section>
+      
+      <!-- Slide 13: Future Directions -->
+      <section>
+        <h2>Future Directions</h2>
+        <p>Long-term MRI follow-up may refine diagnostic criteria. Further research is needed to validate these imaging markers.</p>
+      </section>
+      
+      <!-- Slide 14: Q&A -->
+      <section>
+        <h2>Questions?</h2>
+        <p>Thank you for your attention. I welcome your questions.</p>
+      </section>
+      
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+<script>
+    Reveal.initialize({
+        hash: true,
+        transition: 'none',
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+        pdfSeparateFragments: false
+    });
+</script>
 </body>
 </html>
