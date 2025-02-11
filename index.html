@@ -1,297 +1,506 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
   <title>MRI Physeal Injuries</title>
-
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
   <link rel="stylesheet" href="dist/theme/black.css">
   <link rel="stylesheet" href="plugin/highlight/monokai.css">
-
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="plugin/notes/notes.js"></script>
-  
   <style>
-    .slide-content { display: flex; align-items: center; height: 100%; }
-    .img-column { flex: 66; padding: 10px; }
-    .img-column img { width: 100%; height: auto; max-height: 60vh; }
-    .text-column { flex: 33%; padding: 10px; text-align: left; }
-    .center-text { font-size: 2rem; text-align: center; }
+    .slide-content {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .img-column {
+      flex: 66;
+      padding: 10px;
+    }
+
+    .img-column img {
+      width: 100%;
+      height: auto;
+      max-height: 60vh;
+    }
+
+    .text-column {
+      flex: 33%;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .center-text {
+      font-size: 2rem;
+      text-align: center;
+    }
+
     .reveal h2 {
       margin-top: -0.75em;
     }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+    }
+
+    th,
+    td {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
+
 <body>
-    <div class="reveal">
-        <div class="slides">
-          <!-- Title Slide -->
-          <section>
-            <h2>Stressed or Fractured?</h2>
-            <h4>MRI Differentiation of Physeal Injuries in Children</h4>
-            <p>Daniel Hofstedt, DO</p>
-            <p>February 11, 2025 | MSK Journal Club</p>
-          </section>
-    
-          <!-- Epidemiological Context -->
-          <section>
-            <h2>Clinical Context</h2>
-            <div class="slide-content">
-              <div class="text-column">
-                <h4>Pediatric Sports Participation</h4>
-                <p>>30 million U.S. children in organized sports</p>
-                <p>10% annual injury rate (3 million injuries/year)</p>
-                <p class="fragment">High-risk activities:</p>
-                <ul class="fragment">
-                  <li>Gymnastics (axial loading)</li>
-                  <li>Multi-sport training</li>
-                  <li>Contact sports</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-    
-          <!-- Anatomical Foundation -->
-          <section>
-            <section>
-              <h2>Physeal Anatomy</h2>
-              <div class="slide-content">
-                <div class="text-column">
-                  <h4>Structural Organization</h4>
-                  <ol>
-                    <li>Resting zone</li>
-                    <li>Proliferative zone</li>
-                    <li>Hypertrophic zone</li>
-                  </ol>
-                </div>
-                <div class="img-column">
-                  <img src="images/Fig 2.png" alt="Normal Physis">
-                </div>
-              </div>
-            </section>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section>
+        <h2>Stressed or Fractured?</h2>
+        <h4>MRI Differentiation of Physeal Injuries in Children</h4>
+        <p>Daniel Hofstedt, DO</p>
+        <p>February 11, 2025 | MSK Journal Club</p>
+      </section>
 
-            <section>
-              <h2>Key Landmark</h2>
-              <div class="slide-content">
-                <div class="text-column">
-                  <p class=""><strong>Zone of Provisional Calcification (ZPC)</strong></p>
-                </div>
-                <div class="img-column">
-                  <img src="images/Fig 2.png" alt="Normal Physis">
-                </div>
-              </div>
-            </section>
+      <!-- Study Overview -->
+      <section>
+        <!-- Background Slide -->
+        <section>
+          <h2>Background</h2>
+          <ul>
+            <li>Pediatric athletes: high sports participation</li>
+            <li>Risk of overuse &amp; acute injuries</li>
+            <li>Challenge: Differentiating chronic physeal stress injury vs acute Salter–Harris fracture</li>
+            <li>Incomplete clinical histories at time of imaging</li>
+          </ul>
+        </section>
+        <!-- Study Purpose Slide -->
+        <section>
+          <h2>Study Purpose</h2>
+          <ul>
+            <li>Identify MRI markers for chronic physeal stress injury</li>
+            <li>Differentiation from acute Salter–Harris fracture</li>
+            <li>Focus on knee &amp; wrist injuries</li>
+          </ul>
+        </section>
+      </section>
 
-            <section>
-              <h2>Trilaminar MRI Appearance</h2>
-              <div class="slide-content">
-                <div class="text-column">
-                  <p class="">Trilaminar MRI appearance:</p>
-                  <ul class="">
-                    <li>Hyperintense physeal cartilage</li>
-                    <li>Hypointense ZPC</li>
-                    <li>Vascular metaphysis</li>
-                  </ul>
-                </div>
-                <div class="img-column">
-                  <img src="images/Fig 2.png" alt="Normal Physis">
-                </div>
-              </div>
-            </section>
-          </section>
-    
-          <!-- Injury Mechanisms -->
-          <section>
-            <section>
-              <h2>Pathomechanisms</h2>
-              <div class="slide-content">
-                <div class="text-column">
-                  <h4>Chronic Stress Injury</h4>
-                  <ul>
-                    <li>Repetitive axial loading (gymnasts)</li>
-                    <li>Traction stresses (apophyses)</li>
-                    <li>Metaphyseal vascular compromise</li>
-                  </ul>
-                </div>
-                <div class="img-column">
-                  <img src="images/Fig 5.png" alt="Chronic Stress">
-                </div>
-              </div>
-            </section>
-    
-            <section>
-              <h2>Pathomechanisms</h2>
-              <div class="slide-content">
-                <div class="text-column">
-                  <h4>Acute Salter-Harris Fracture</h4>
-                  <ul>
-                    <li>Transverse physeal cleavage</li>
-                    <li>Vertical cartilage disruption</li>
-                    <li>Periosteal/perichondrial rupture</li>
-                  </ul>
-                </div>
-                <div class="img-column">
-                  <img src="images/Fig 6.png" alt="Acute Fracture">
-                </div>
-              </div>
-            </section>
-          </section>
-    
-          <!-- Key Differentiators -->
-          <section>
-            <section>
-              <h2>MRI Differentiators</h2>
-              <div class="slide-content">
-                <div class="text-column">
-                  <h4>Chronic Stress Injury (79% Specific)</h4>
-                  <ul>
-                    <li>Focal physeal thickening (42%)</li>
-                    <li>ZPC discontinuity (79%)</li>
-                    <li>Intact periosteum (98%)</li>
-                  </ul>
-                </div>
-                <div class="img-column">
-                  <img src="images/Fig 4.png" alt="Chronic Features">
-                </div>
-              </div>
-            </section>
-    
-            <section>
-              <h2>MRI Differentiators</h2>
-              <div class="slide-content">
-                <div class="text-column">
-                  <h4>Acute SH Fracture (83% Specific)</h4>
-                  <ul>
-                    <li>Periosteal disruption (83%)</li>
-                    <li>Perichondrial rupture (80%)</li>
-                    <li>Soft tissue edema (97%)</li>
-                  </ul>
-                </div>
-                <div class="img-column">
-                  <img src="images/Fig 8.png" alt="Acute Features">
-                </div>
-              </div>
-            </section>
-          </section>
-    
-          <!-- Case Study: Acute-on-Chronic -->
-          <section>
-            <section>
-              <h2>Clinical Challenge</h2>
-              <div class="slide-content">
-                <div class="img-column">
-                  <img src="images/Fig 1.png" alt="Combined Injury">
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2>12yo Female Gymnast</h2>
-              <div class="slide-content">
-                <div class="img-column">
-                  <img src="images/Fig 1.png" alt="Combined Injury">
-                </div>
-                <div class="text-column">
-                  <ul>
-                    <li>Chronic: Medial tibial ZPC disruption</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2>12yo Female Gymnast</h2>
-              <div class="slide-content">
-                <div class="img-column">
-                  <img src="images/Fig 1.png" alt="Combined Injury">
-                </div>
-                <div class="text-column">
-                  <ul>
-                    <li>Acute: Lateral SH III fracture</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <section>
-              <h2>Key Markers</h2>
-              <div class="slide-content">
-                <div class="img-column">
-                  <img src="images/Fig 1.png" alt="Combined Injury">
-                </div>
-                <div class="text-column">
-                  <ul>
-                    <li>Intact vs disrupted periosteum</li>
-                    <li>Focal vs generalized thickening</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-          </section>
-    
-          <!-- Clinical Implications -->
-          <section>
-            <h2>Management Implications</h2>
-            <div class="slide-content">
-              <div class="text-column">
-                <table>
-                  <tr>
-                    <th>Finding</th>
-                    <th>Chronic Stress</th>
-                    <th>Acute Fracture</th>
-                  </tr>
-                  <tr>
-                    <td>Treatment</td>
-                    <td>Activity modification</td>
-                    <td>Immobilization</td>
-                  </tr>
-                  <tr>
-                    <td>Complications</td>
-                    <td>26% growth disturbance</td>
-                    <td>18% premature fusion</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="img-column">
-                <img src="images/Table 1.png" alt="Study Data">
-              </div>
-            </div>
-          </section>
-    
-          <!-- Conclusion -->
-          <section>
-            <h2>Takeaway Points</h2>
-            <div class="slide-content">
-              <div class="text-column">
-                <ol>
-                  <li>ZPC integrity is key differentiator (OR 5.7)</li>
-                  <li>Periosteal injury rare in chronic stress (2%)</li>
-                  <li>Multifocal thickening suggests chronicity</li>
-                </ol>
-              </div>
-              <div class="img-column">
-                <img src="images/Fig 9.png" alt="Comparison">
-              </div>
-            </div>
-          </section>
+      <!-- Epidemiological Context -->
+      <section>
+        <h2>Clinical Context</h2>
+        <div class="slide-content">
+          <div class="text-column">
+            <h4>Pediatric Sports Participation</h4>
+            <p>>30 million U.S. children in organized sports</p>
+            <p>1 in 10 pediatric sport-related injuries estimated per year</p>
+            <p class="fragment">High-risk activities:</p>
+            <ul class="fragment">
+              <li>Gymnastics (axial loading)</li>
+              <li>Multi-sport training</li>
+              <li>Contact sports</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      
-      <!-- Slide 13: Future Directions -->
+      </section>
+
+      <!-- Anatomical Foundation -->
+      <section>
+        <section>
+          <h2>Physeal Anatomy</h2>
+          <div class="slide-content">
+            <div class="text-column">
+              <h4>Structural Organization</h4>
+              <ol>
+                <li>Resting zone</li>
+                <li>Proliferative zone</li>
+                <li>Hypertrophic zone</li>
+              </ol>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 2.png" alt="Normal Physis">
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Key Landmark</h2>
+          <div class="slide-content">
+            <div class="text-column">
+              <p><strong>Zone of Provisional Calcification (ZPC)</strong></p>
+              <p style="font-size: 1.5rem;">ZPC on MRI includes the histologic ZPC and adjacent mineralized primary
+                spongiosa.</p>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 2.png" alt="Normal Physis">
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Trilaminar MRI Appearance</h2>
+          <div class="slide-content">
+            <div class="text-column">
+              <p>Trilaminar appearance:</p>
+              <ul>
+                <li>Hyperintense physeal cartilage</li>
+                <li>Hypointense ZPC</li>
+                <li>Vascular metaphysis</li>
+              </ul>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 2.png" alt="Normal Physis">
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Injury Mechanisms -->
+      <section>
+        <section>
+          <h2>Pathomechanisms</h2>
+          <div class="slide-content">
+            <div class="text-column">
+              <h4>Chronic Stress Injury</h4>
+              <ul>
+                <li>Repetitive axial loading</li>
+                <li>Traction stresses at apophyses</li>
+                <li>Metaphyseal vascular compromise</li>
+              </ul>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 5.png" alt="Chronic Stress">
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Pathomechanisms</h2>
+          <div class="slide-content">
+            <div class="text-column">
+              <h4>Acute Salter–Harris Fracture</h4>
+              <ul>
+                <li>Transverse physeal cleavage</li>
+                <li>Vertical cartilage disruption</li>
+                <li>Periosteal/perichondrial rupture</li>
+              </ul>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 6.png" alt="Acute Fracture">
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- MRI Differentiators -->
+      <section>
+        <!-- Vertical Slide: Chronic Stress Injury Findings -->
+        <section>
+          <h2>MRI Differentiators</h2>
+          <h4>Chronic Stress Injury Findings</h4>
+          <div class="slide-content">
+            <div class="text-column">
+              <p class="fragment" style="font-size:1.5rem;">(These percentages indicate the proportion of chronic injury
+                cases showing each finding)</p>
+              <ul style="font-size: 2rem;">
+                <li>Focal physeal thickening in 42% of cases</li>
+                <li>ZPC discontinuity in 79% of cases</li>
+                <li>Intact periosteum in 98% of cases</li>
+              </ul>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 4.png" alt="Chronic Features">
+            </div>
+          </div>
+        </section>
+
+        <!-- Vertical Slide: Acute SH Fracture Findings -->
+        <section>
+          <h2>MRI Differentiators</h2>
+          <h4>Acute Salter–Harris Fracture Findings</h4>
+          <div class="slide-content">
+            <div class="text-column">
+              <ul style="font-size: 2rem;">
+                <li>Periosteal disruption in 83% of cases</li>
+                <li>Perichondrial rupture in 80% of cases</li>
+                <li>Soft tissue edema in 97% of cases</li>
+              </ul>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 8.png" alt="Acute Features" style="max-height: 30vh; width: auto;">
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Case Study: Acute-on-Chronic -->
+      <section>
+        <!-- Overall Clinical Image -->
+        <section>
+          <h2>Clinical Challenge</h2>
+          <div class="slide-content">
+            <div class="img-column">
+              <img src="images/Fig 1.png" alt="Combined Injury">
+            </div>
+          </div>
+        </section>
+
+        <!-- Lateral Aspect Annotations -->
+        <section>
+          <h2>12yo Female Gymnast – Lateral Aspect</h2>
+          <div class="slide-content">
+            <div class="img-column">
+              <img src="images/Fig 1.png" alt="Lateral Aspect of Injury">
+            </div>
+            <div class="text-column">
+              <ul style="font-size: 1.5rem;">
+                <li class="fragment"><strong>Arrow:</strong> Nondisplaced Salter–Harris III fracture of the lateral
+                  proximal tibia extending into the physis.</li>
+                <li class="fragment"><strong>Dashed Arrow:</strong> Diffuse proximal tibial physeal widening.</li>
+                <li class="fragment"><strong>Curved Arrow:</strong> Focal periosteal disruption.</li>
+                <li class="fragment"><strong>Asterisk:</strong> Small knee effusion.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Medial Aspect Annotations -->
+        <section>
+          <h2>12yo Female Gymnast – Medial Aspect</h2>
+          <div class="slide-content">
+            <div class="img-column">
+              <img src="images/Fig 1.png" alt="Medial Aspect of Injury">
+            </div>
+            <div class="text-column">
+              <ul style="font-size: 1.5rem;">
+                <li class="fragment"><strong>Dashed Ovals:</strong> Focal physeal thickening, indicating chronic stress
+                  injury.</li>
+                <li class="fragment"><strong>Arrowheads:</strong> Interruption of the Zone of Provisional Calcification
+                  (ZPC).</li>
+                <li class="fragment">Similar findings are observed on both medial and lateral aspects of the distal
+                  femur.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Case Significance -->
+        <section>
+          <h2>Case Significance</h2>
+          <div class="slide-content">
+            <div class="img-column">
+              <img src="images/Fig 1.png" alt="Annotated Injury">
+            </div>
+            <div class="text-column">
+              <p style="font-size: 2rem;">Great case showing both acute and chronic physeal injury findings in a single
+                image.</p>
+              <ul style="font-size: 2rem;">
+                <li class="fragment">Acute: Periosteal disruption, soft tissue edema.</li>
+                <li class="fragment">Chronic: Focal physeal thickening, ZPC discontinuity.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Clinical Implications -->
+      <section>
+        <h2>Management Implications</h2>
+        <div class="slide-content">
+          <div class="text-column">
+            <table>
+              <tr>
+                <th>Finding</th>
+                <th>Chronic Stress</th>
+                <th>Acute Fracture</th>
+              </tr>
+              <tr>
+                <td>Treatment</td>
+                <td>Activity modification</td>
+                <td>Immobilization</td>
+              </tr>
+              <tr>
+                <td>Complications</td>
+                <td>26% growth disturbance</td>
+                <td>18% premature fusion</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Takeaway Points -->
+      <section>
+        <h2>Takeaway Points</h2>
+        <!-- Vertical Slide: Point 1 -->
+        <section>
+          <div class="slide-content">
+            <div class="text-column">
+              <ol start="1" style="font-size: 1.8rem;">
+          <li>
+            Loss of ZPC integrity with focal physeal thickening is a key differentiator (Odds Ratio 5.7)
+            <p class="fragment" style="font-size:1.5rem;">
+              (The combination of ZPC discontinuity and focal thickening is 5.7 times more likely in chronic stress injuries than in acute SH fractures.)
+            </p>
+          </li>
+              </ol>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 9.png" alt="Comparison">
+            </div>
+          </div>
+        </section>
+        <!-- Vertical Slide: Point 2 -->
+        <section>
+          <div class="slide-content">
+            <div class="text-column">
+              <ol start="2" style="font-size: 1.8rem;"></ol>
+          <li>
+            Periosteal injury is rare in chronic stress (<2%)
+            <p class="fragment" style="font-size:1.5rem;">
+              (<2% of chronic stress cases show periosteal disruption, versus ~83% in acute SH fractures.)
+            </p>
+          </li>
+              </ol>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 9.png" alt="Comparison">
+            </div>
+          </div>
+        </section>
+        <!-- Vertical Slide: Point 3 -->
+        <section>
+          <div class="slide-content">
+            <div class="text-column">
+              <ol start="3" style="font-size: 1.8rem;">
+          <li>
+            Multifocal thickening suggests chronicity
+            <p class="fragment" style="font-size:1.5rem;">
+              (Observed in 25% of chronic stress injuries compared to only 3% in acute SH fractures.)
+            </p>
+          </li>
+              </ol>
+            </div>
+            <div class="img-column">
+              <img src="images/Fig 9.png" alt="Comparison">
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Study Analysis -->
+      <section>
+        <section>
+          <h2>Results Summary</h2>
+          <ul>
+            <li>Chronic stress: focal thickening &amp; ZPC discontinuity</li>
+            <li>Acute SH: generalized thickening, hyperintense signal</li>
+            <li>Acute SH: periosteal/perichondrial disruption, edema &amp; effusion</li>
+            <li>Combined markers: 5.7× odds for chronic injury</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Strengths &amp; Weaknesses</h2>
+          <div class="slide-content">
+            <div class="text-column">
+              <h4>Strengths</h4>
+              <ul>
+                <li>Robust MRI criteria</li>
+                <li>High inter-observer reliability</li>
+                <li>Clinically relevant findings</li>
+              </ul>
+              <h4>Weaknesses</h4>
+              <ul>
+                <li>Retrospective design</li>
+                <li>Small sample size</li>
+                <li>Overlapping imaging features</li>
+                <li>Limited to knee &amp; wrist</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Conclusions</h2>
+          <ul>
+            <li>MRI can differentiate chronic vs. acute physeal injury</li>
+            <li>Focal thickening &amp; ZPC discontinuity favor chronic stress</li>
+            <li>Periosteal/perichondrial injury, edema &amp; effusion indicate SH fracture</li>
+            <li>Combined assessment guides proper treatment</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Discussion Points</h2>
+          <ul>
+            <li>How do these MRI markers affect your management?</li>
+            <li>Handling cases with overlapping features?</li>
+            <li>Applicability to other joints?</li>
+            <li>Need for prospective, long-term studies?</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Future Directions -->
       <section>
         <h2>Future Directions</h2>
-        <p>Long-term MRI follow-up may refine diagnostic criteria. Further research is needed to validate these imaging markers.</p>
+        <p>Long-term MRI follow-up may refine diagnostic criteria. Further research is needed to validate these imaging
+          markers.</p>
       </section>
-      
-      <!-- Slide 14: Q&A -->
+
+      <!-- Q&A -->
       <section>
         <h2>Questions?</h2>
         <p>Thank you for your attention. I welcome your questions.</p>
       </section>
-      
+
+      <!-- References -->
+      <section>
+        <h2>References</h2>
+        <p>1. Bedoya MA, Jaramillo D, Iwasaka-Neder J, Laor T. Stressed or fractured: MRI differentiating indicators of physeal injury. Skeletal Radiol. 2024;53:2437–2447. doi:10.1007/s00256-024-04670-y</p>
+      </section>
+
+      <!-- Appendix -->
+      <section>
+        <h2>Appendix</h2>
+        <section>
+          <h3>Data Selection</h3>
+          <div class="slide-content">
+        <div class="img-column" style="display: flex; justify-content: center;">
+          <img src="images/Fig 3.png" alt="Data Selection" style="max-height: 30vh; width: auto;">
+        </div>
+          </div>
+        </section>
+        <section>
+          <h3>Table 1</h3>
+          <div class="slide-content">
+        <div class="img-column">
+          <img src="images/Table 1.png" alt="Table 1">
+        </div>
+          </div>
+        </section>
+        <section>
+          <h3>Table 2</h3>
+          <div class="slide-content">
+        <div class="img-column">
+          <img src="images/Table 2.png" alt="Table 2">
+        </div>
+          </div>
+        </section>
+        <section>
+          <h3>Table 3</h3>
+          <div class="slide-content">
+        <div class="img-column">
+          <img src="images/Table 3.png" alt="Table 3">
+        </div>
+          </div>
+        </section>
+      </section>
+
     </div>
   </div>
 
@@ -299,13 +508,14 @@
   <script src="plugin/notes/notes.js"></script>
   <script src="plugin/markdown/markdown.js"></script>
   <script src="plugin/highlight/highlight.js"></script>
-<script>
+  <script>
     Reveal.initialize({
-        hash: true,
-        transition: 'none',
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
-        pdfSeparateFragments: false
+      hash: true,
+      transition: 'none',
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      pdfSeparateFragments: false
     });
-</script>
+  </script>
 </body>
+
 </html>
